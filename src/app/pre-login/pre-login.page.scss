@@ -1,0 +1,25 @@
+.fundo{
+    --background: url(..\..\assets\img\fundo01.jpg) 0 0/100% 100% no-repeat;
+}
+.img{
+    max-width: 350px;
+    max-height: 350px;
+    margin: 0 auto;
+}
+.button{
+    --background: #4682B4;
+    --color: #fff;
+    padding: 2px 5px;
+}
+.button2{
+    --background: #B22222;
+    --color: #fff;
+}
+.button3{
+    --background: #32CD32;
+    --color: #fff;
+}
+.text{
+    color: #fff;
+    text-align: center;
+}

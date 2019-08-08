@@ -1,0 +1,129 @@
+<ion-header class="header">
+
+    <ion-buttons slot="start">
+      <ion-menu-button>
+        <ion-icon class="icon" name="list"></ion-icon>
+      </ion-menu-button>
+  
+      <img class="menu" src="../../assets/img/logo13.png">
+  
+      <ion-button slot="end" (click)="cart()">
+        <ion-icon name="cart" class="icon2"></ion-icon>
+      </ion-button>
+      <ion-button slot="end" (click)="search()">
+          <ion-icon name="search" class="icon2"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+  
+  </ion-header>
+<ion-content  class="testeFont">
+
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-avatar>
+            <img src="../../assets/img/img1.png">
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="4">
+          <ion-avatar>
+              <img src="../../assets/img/img3.png">
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="4">
+          <ion-avatar>
+              <img src="../../assets/img/img2.png">
+          </ion-avatar>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+            <h6>Gabriel Martins</h6>
+        </ion-col>
+        <ion-col size="4">
+            <h6>Carlos Alexandre</h6>
+        </ion-col>
+        <ion-col size="4">
+            <h6>João Vitor</h6>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+ 
+  <br>
+
+  <ion-card>
+
+    <h6 class="text">
+      Somos uma empresa que em geral, deseja de todas as formas facilitar a busca e/ou a compra de toda roupa desejada, através
+      de um aplicativo, nos mercados jurídicos (Lojistas, atacado e varejista e todo comércio referente a roupa) e físico!
+    </h6>
+    <br>
+    <ion-card-subtitle>
+      <h6 class="text">Um grupo composto por 3 pessoas: Gabriel Martins, João Vitor e Carlos Alexandre que, através de uma reunião fizemos
+        uma pesquisa de mercado, e chegamos a conclusão que, grande parte do público entre 18 e 30 anos, desejam ter roupas
+        exclusivas de marcas específicas. Entretanto, o mesmo público tem dificuldade em achar essas roupas no mercado físico.</h6>
+    </ion-card-subtitle>
+  </ion-card>
+  <ion-fab class="contat" vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon class="teste1" name="contacts"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list class="teste" side="top">
+      <a href="https://m.facebook.com/exclusiveclothingrj/">
+        <ion-fab-button>
+          <ion-icon name="logo-facebook"></ion-icon>
+        </ion-fab-button>
+      </a>
+      <a href="https://twitter.com/clothing_rj">
+        <ion-fab-button>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </ion-fab-button>
+      </a>
+      <a href="https://www.instagram.com/exclusiveclothingrj/">
+        <ion-fab-button>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </ion-fab-button>
+      </a>
+    </ion-fab-list>
+    <ion-fab-list class="teste" side="start">
+      <a href="https://github.com/exclusivecrj">
+        <ion-fab-button>
+          <ion-icon name="logo-github"></ion-icon>
+        </ion-fab-button>
+      </a>
+      <a href="https://www.linkedin.com/in/exclusive-clothing-23810b189/">
+        <ion-fab-button>
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </ion-fab-button>
+      </a>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab class="contat" vertical="bottom" horizontal="start" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="settings"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list class="teste" side="end">
+  
+        <ion-fab-button class="btn" (click)="logout()">
+          <ion-icon class="img" name="log-out"></ion-icon>
+        </ion-fab-button>
+  
+        <ion-fab-button class="btn" (click)="search()">
+          <ion-icon class="img" name="search"></ion-icon>
+        </ion-fab-button>
+  
+        <ion-fab-button class="btn" (click)="contact()">
+          <ion-icon class="img" name="contact"></ion-icon>
+        </ion-fab-button>
+  
+        <ion-fab-button class="btn" (click)="cart()">
+          <ion-icon class="img" name="cart"></ion-icon>
+        </ion-fab-button>
+  
+      </ion-fab-list>
+    </ion-fab>
+
+</ion-content>

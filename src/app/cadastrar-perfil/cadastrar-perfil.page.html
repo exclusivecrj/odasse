@@ -1,0 +1,68 @@
+<ion-header class="header">
+  <ion-buttons slot="start">
+    <img class="menu" src="../../assets/img/logo2.png">
+  </ion-buttons>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="formGroup" (ngSubmit)="cadastrar()">
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>NOME</ion-label>
+        <ion-input formControlName="nome" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>TELEFONE</ion-label>
+        <ion-input formControlName="telefone" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>EMAIL</ion-label>
+        <ion-input formControlName="email" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>CPF</ion-label>
+        <ion-input formControlName="cpf" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>CEP</ion-label>
+        <ion-input formControlName="cep" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>ENDEREÇO</ion-label>
+        <ion-input formControlName="endereco" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>COMPLEMENTO</ion-label>
+        <ion-input formControlName="complemento" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>BAIRRO</ion-label>
+        <ion-input formControlName="bairro" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>CIDADE</ion-label>
+        <ion-input formControlName="cidade" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>ESTADO</ion-label>
+        <ion-input formControlName="estado" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>NÚMERAÇÃO DA CASA</ion-label>
+        <ion-input formControlName="numero" type="text"></ion-input>
+      </ion-item>
+</ion-list>
+      <div style="text-align: center">
+        <ion-button  (click)="cadastrar()" shape="round" color="primary">CADASTRAR</ion-button>
+      </div>
+    
+  </form>
+</ion-content>

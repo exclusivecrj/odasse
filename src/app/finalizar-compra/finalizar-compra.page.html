@@ -1,0 +1,132 @@
+<ion-content class="testeFont">
+
+  <ion-slides pager="false" [options]="slideOpts">
+    <ion-slide>
+      <div>
+        <h1>Finalizar Compra</h1>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Pague com seu cartão de crédito</ion-card-title>
+            <ion-card-subtitle>parcelamento em até 12x sem juros</ion-card-subtitle>
+          </ion-card-header>
+
+          <div class="box1">
+            <ion-item>
+              <ion-label class="">Nº do cartão:</ion-label>
+              <ion-input type="text" value="" #cpf></ion-input>
+            </ion-item>
+          </div>
+
+          <div class="box2">
+            <ion-item>
+              <ion-label fixed>Data de validade:</ion-label>
+              <ion-input type="text" value="" #endereco></ion-input>
+            </ion-item>
+          </div>
+          <div class="box3">
+          </div>
+          <div class="box4">
+            <ion-item>
+              <ion-label fixed>Data de expedição:</ion-label>
+              <ion-input type="text" value="" #bairro></ion-input>
+            </ion-item>
+          </div>
+          <div class="box5">
+            <ion-item>
+              <ion-label fixed>Código de segurança:</ion-label>
+              <ion-input type="text" value="" #complemento></ion-input>
+            </ion-item>
+          </div>
+        </ion-card>
+
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="3">
+                <ion-avatar>
+                  <img src="https://meupos.pt/image/catalog/Pages/visa_electron.jpg">
+                </ion-avatar>
+              </ion-col>
+              <ion-col size="3">
+                <ion-avatar>
+                  <img src="https://meupos.pt/image/catalog/Pages/mastercard.jpg">
+                </ion-avatar>
+              </ion-col>
+              <ion-col size="3">
+                <ion-avatar>
+                  <img src="http://3.bp.blogspot.com/-TYnBQHa9Jd8/VZw0kq1PHqI/AAAAAAAAXd8/qdpEtxsGeIY/s320/ELO-bandeira-de-cartoes.jpg">
+                </ion-avatar>
+              </ion-col>
+              <ion-col size="3">
+                <ion-avatar>
+                  <img src="data:image/jpeg;base64,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">
+                </ion-avatar>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="3">
+                <h6>Crédito e Débito</h6>
+              </ion-col>
+              <ion-col size="3">
+                <h6>Crédito e Débito</h6>
+              </ion-col>
+              <ion-col size="3">
+                <h6>Crédito e Débito</h6>
+              </ion-col>
+              <ion-col size="3">
+                <h6>Crédito e Débito</h6>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Calcule aqui o seu frete!</ion-card-title>
+            <ion-card-subtitle>Insira o seu CEP</ion-card-subtitle>
+          </ion-card-header>
+          <ion-item>
+
+            <ion-label fixed>CEP:</ion-label>
+            <ion-input type="text" value="" #senha3></ion-input>
+          </ion-item>
+
+          <ion-card-content>
+            O VALOR DO FRETE PODE VARIAR MEDIANTE A DISTÂNCIA!
+          </ion-card-content>
+
+          <a href="http://www2.correios.com.br/encomendas/malote/simular_preco.cfm">
+            <ion-button color="tertiary" (click)="cadastrar()" expand="block">
+              CALCULAR FRETE
+            </ion-button>
+          </a>
+        </ion-card>
+
+        <a href="https://sitedeapostasonline.net/wp-content/uploads/2018/02/boleto-banc%C3%A1rio-apostas-online.jpg">
+          <ion-button color="tertiary" (click)="cadastrar()" expand="block">
+            Emitir boleto
+          </ion-button>
+        </a>
+        <ion-button color="tertiary" (click)="finalizarCompra()" expand="block" color="dark">
+          <ion-icon color="primary" name="arrow-forward" slot="start"></ion-icon>
+          Finalizar compra
+        </ion-button>
+      </div>
+
+    </ion-slide>
+
+  </ion-slides>
+
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+
+
+
+</ion-content>
+
+<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">

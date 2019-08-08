@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+
+ion-content{
+    color: black;
+    font-family: 'Poppins';
+}
+ion-content ion-card{
+    border: 2.5px;
+    border-color: #000000;
+    border-radius: 5%;
+}
+ion-content ion-card img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+ion-content ion-card h1{
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin: 2px;
+}
+ion-content ion-card h5{
+    text-align: justify;
+    padding: 5px;
+    color: #333333; 
+}
+
+ion-input{
+    --color: #555555
+}

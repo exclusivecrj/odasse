@@ -1,0 +1,77 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button>
+          <ion-icon class="icon" name="list"></ion-icon>
+        </ion-menu-button>
+        <img class="menu" src="../../assets/img/logo.png">
+      </ion-buttons>
+      <ion-button slot="end" (click)="showFilter()" color="tertiary">
+        <ion-icon name="ios-shirt" slot="end"></ion-icon>
+        FILTROS
+      </ion-button>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-searchbar #textoBusca animated placeholder="Procurar" debounce="500" (ionChange)="busca()"></ion-searchbar>
+  
+  <ion-content class="testeFont">
+  
+  
+    <ion-list [ngStyle]="{'display':filtroBox}">
+      <ion-list-header>Filtros</ion-list-header>
+  
+      <ion-item>
+        <ion-label>Gênero</ion-label>
+        <ion-select multiple="true" cancelText="Nah" okText="Okay!">
+          <ion-select-option value="Masculino">Masculino</ion-select-option>
+          <ion-select-option value="Feminino">Feminino</ion-select-option>
+          <ion-select-option value="Unissex">Unissex</ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+  
+      <ion-item>
+        <ion-label>Pets</ion-label>
+        <ion-select multiple="true">
+          <ion-select-option value="bird" selected>Bird</ion-select-option>
+          <ion-select-option value="cat">Cat</ion-select-option>
+          <ion-select-option value="dog" selected>Dog</ion-select-option>
+          <ion-select-option value="honeybadger">Honey Badger</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  
+    <ion-fab (click)="cart()" vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button color="tertiary">
+        <ion-icon name="cart"></ion-icon>
+        <ion-badge color="primary" *ngIf="pedido != null">{{pedido.itens.length}}</ion-badge>
+      </ion-fab-button>
+    </ion-fab>
+  
+    <ion-row>
+      <ion-col align-self-center text-center>
+        <ion-card *ngFor="let roupas of listaDeRoupas">
+          <div>
+            <img width="80%" src="{{roupas?.img}}" (click)="presentModal(roupas)">
+          </div>
+          <ion-card-header>
+            <ion-card-title> {{roupas?.roupa}} </ion-card-title>
+            <ion-card-subtitle>R$ {{roupas?.preco}} </ion-card-subtitle>
+            <ion-card-subtitle> {{roupas?.cor}} </ion-card-subtitle>
+          </ion-card-header>
+          <ion-button color="dark" (click)="addCarrinho(roupas)">
+            <ion-icon name="add"></ion-icon> Adicionar ao carrinho
+          </ion-button>
+          <ion-button color="danger" (click)="remove(roupas)">
+            <ion-icon name="trash"></ion-icon>Excluir
+          </ion-button>
+          <ion-button color="warning" (click)="viewRoupa(roupas)">
+            <ion-icon name="cloud-upload"></ion-icon>atualizar
+          </ion-button>
+          <br>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  
+  </ion-content>

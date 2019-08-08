@@ -1,0 +1,137 @@
+<ion-header class="header">
+
+    <ion-buttons slot="start">
+      <ion-menu-button>
+        <ion-icon class="icon" name="list"></ion-icon>
+      </ion-menu-button>
+  
+      <img class="menu" src="../../assets/img/logo.png">
+  
+      <ion-button slot="end" (click)="cart()">
+        <ion-icon name="cart" class="icon2" (click)="cart()"></ion-icon>
+      </ion-button>
+      <ion-button slot="end" (click)="search()">
+        <ion-icon name="search" class="icon2" (click)="search()"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  
+  </ion-header>
+  
+  
+  <ion-content>
+  
+    <ion-card>
+      <ion-card-header class="title">
+        <ion-card-title>FIQUE POR DENTRO DAS NOVIDADES AQUI!</ion-card-title>
+      </ion-card-header>
+      <ion-slides pager="true" autoplay="true" [options]="slideOpts">
+        <ion-slide>
+          <ion-img width="100%" src="https://extra.globo.com/incoming/20516733-0fe-6ec/w976h550-PROP/cr7-chuteira-real-madrid-0.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="https://extra.globo.com/incoming/13743165-7d7-ce7/w976h550-PROP/blusa-infantil-da-zara-campos-de-concetracao-nazistas.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="https://extra.globo.com/incoming/17291625-bce-c15/w976h550-PROP/rafael-nadal-campanha-publicitaria-1.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="https://extra.globo.com/noticias/economia/71899-16b-9d2/w976h550-PROP/24_09_ghg_locao.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="https://extra.globo.com/incoming/22664247-e9d-faf/w976h550-PROP/38538930_28072005marcos-cruzext-enexclusivavarejo-norte-shopping-ponta-de-estoque-da-nik.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="https://extra.globo.com/incoming/4673113-815-a04/w976h550-PROP/denancia-zoompzaraglobo.jpg"></ion-img>
+        </ion-slide>
+  
+      </ion-slides>
+    </ion-card>
+  
+    <p></p>
+  
+    <ion-card>
+      <ion-card-header class="textt">
+        <ion-card-title>DESCONTOS DO DIA 20 Á 29 DE AGOSTO</ion-card-title>
+        <ion-card-subtitle>TODA LINHA NIKE COM 20% DE DESCONTO, FIQUE POR DENTRO E NÃO PERCA.</ion-card-subtitle>
+        <p></p>
+        <div style="text-align: center">
+          <a href="https://www.nike.com.br/">
+            <ion-button  shape="round" color="dark">VÁ PARA NIKE</ion-button>
+          </a>
+        </div>
+      </ion-card-header>
+  
+    </ion-card>
+  
+    <p></p>
+  
+    <ion-card>
+      <ion-card-header class="textt">
+        <ion-card-title>QUEIMA DE ESTOQUE ZARA</ion-card-title>
+        <ion-card-subtitle>TODA LINHA ZARA COM 50% DE DESCONTO NA QUEIMA DE ESTOQUE, CORRA E GARANTA SUA PEÇA.</ion-card-subtitle>
+        <p></p>
+        <div style="text-align:center">
+          <a href="https://www.zara.com/br/">
+  
+            <ion-button  shape="round" color="dark">VÁ PARA ZARA</ion-button>
+  
+          </a>
+        </div>
+  
+      </ion-card-header>
+  
+    </ion-card>
+  
+    <p></p>
+  
+  
+  
+  
+    <ion-card>
+      <ion-card-header class="textt">
+        <ion-card-title>CUPOM 10% OFF</ion-card-title>
+        <ion-card-subtitle>RETIRE AQUI SEU CUPOM DE 10% DE DESCONTO EM QUALQUER COMPRA DO SITE, CLIQUE ABAIXO.</ion-card-subtitle>
+        <p></p>
+        <div style="text-align:center">
+          <a href="https://www.picodi.com/br/?kid=559375&gclid=Cj0KCQjwrdjnBRDXARIsAEcE5Yl1bpFah_cnGpAjw6QM4Oh7S8V9SxkdF19Kc6Q7z-cQvPqUF2LgsI8aAvC3EALw_wcB">
+            <ion-button  shape="round" color="dark">RETIRE O CUPOM</ion-button>
+          </a>
+        </div>
+      </ion-card-header>
+  
+    </ion-card>
+  
+    <p> </p>
+  
+    <ion-card>
+      <ion-card-header class="textt">
+        <ion-card-title>FIQUE POR DENTRO DAS NOVIDADES DO NOSSO APP!</ion-card-title>
+        <ion-card-subtitle>ATIVE AS NOTIFICAÇÕES DO NOSSO APP E CONCORRA A DESCONTOS EXCLUSIVOS EM LINHAS EXCLUSIVAS!! </ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  
+    <ion-fab class="contat" vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="ios-apps"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list class="teste" side="start">
+  
+        <ion-fab-button class="btn" (click)="logout()">
+          <ion-icon class="img" name="log-out"></ion-icon>
+        </ion-fab-button>
+  
+        <ion-fab-button class="btn" (click)="search()">
+          <ion-icon class="img" name="search"></ion-icon>
+        </ion-fab-button>
+  
+        <ion-fab-button class="btn" (click)="contact()">
+          <ion-icon class="img" name="contact"></ion-icon>
+        </ion-fab-button>
+  
+        <ion-fab-button class="btn" (click)="cart()">
+          <ion-icon class="img" name="cart"></ion-icon>
+        </ion-fab-button>
+  
+      </ion-fab-list>
+    </ion-fab>
+  </ion-content>

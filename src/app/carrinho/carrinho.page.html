@@ -1,0 +1,76 @@
+<ion-header class="header">
+
+  <ion-buttons slot="start">
+    <ion-menu-button>
+      <ion-icon class="icon2" name="list"></ion-icon>
+    </ion-menu-button>
+
+    <img class="menu" src="../../assets/img/logo.png">
+
+    <ion-button slot="end" (click)="cart()">
+      <ion-icon name="cart" class="icon2"></ion-icon>
+    </ion-button>
+    <ion-button slot="end" (click)="search()">
+        <ion-icon name="search" class="icon2"></ion-icon>
+      </ion-button>
+  </ion-buttons>
+
+</ion-header>
+
+<ion-content>
+
+<ion-row>
+  <ion-col align-self-center text-center>
+    <ion-card *ngFor="let pedido of pedido.itens">
+      <div>
+          <img width="100%" src="{{pedido?.roupas.img}}">
+      </div>
+      <ion-card-header>
+        <h5> {{pedido?.roupas.roupa}} </h5>
+        <p> R$ {{pedido?.roupas.preco}} </p>
+      </ion-card-header>
+      <ion-card-content>
+
+        <ion-button (click)="addCarrinho(roupas)">
+          <ion-icon name="cart">Comprar</ion-icon>
+        </ion-button>
+        <ion-button (click)="removeCar(pedido?.roupas)">
+          <ion-icon name="close">Remover</ion-icon>
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>
+
+<ion-fab class="contat" vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="settings"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list class="teste" side="start">
+
+    <ion-fab-button class="btn" (click)="logout()">
+      <ion-icon class="img" name="log-out"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button class="btn" (click)="search()">
+      <ion-icon class="img" name="search"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button class="btn" (click)="contact()">
+      <ion-icon class="img" name="contact"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-button class="btn" (click)="cart()">
+      <ion-icon class="img" name="cart"></ion-icon>
+    </ion-fab-button>
+
+  </ion-fab-list>
+</ion-fab>
+
+<ion-col offset="3" size="3" align-self-center text-center>
+  <ion-button (click)="finalizarCompra(marcas)">
+    Finalizar Compra
+  </ion-button>
+</ion-col>
+
+</ion-content>
