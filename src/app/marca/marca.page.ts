@@ -73,7 +73,6 @@ export class MarcaPage implements OnInit {
   downloadFoto() {
     let ref = firebase.storage().ref()
       .child(`marca/${this.id}.jpg`);
-    
     ref.getDownloadURL().then(url => {
       this.img = url;
     })
@@ -87,6 +86,14 @@ export class MarcaPage implements OnInit {
       duration: 2000
     });
     await loading.present();
+  }
+
+  cart(){
+    this.router.navigate(['/carrinho']);
+  }
+
+  search(){
+    this.router.navigate(['/roupas']);
   }
 
 }

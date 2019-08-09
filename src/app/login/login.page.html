@@ -1,9 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
 
+  <div class="logo">
+    <div class="img">
+      <img src="../../assets/img/logo.png">
+    </div>
+  </div>
+
+  <ion-slides pager="false" [options]="slideOpts">
+    <ion-slide>
+      <div>
+        <h1>Cadastre-se</h1>
+
+        <div class="box1">
+          <ion-item>
+            <ion-label class="">E-mail</ion-label>
+            <ion-input type="text" value="" #email1></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="box2">
+          <ion-item>
+            <ion-label fixed>Senha</ion-label>
+            <ion-input type="password" value="" #senha1></ion-input>
+          </ion-item>
+        </div>
+
+        <ion-button color="tertiary" (click)="cadastrar()" expand="block" color="dark">Cadastrar</ion-button>
+        <ion-button color="tertiary" (click)="lojista()" expand="block" color="dark">Cadastrar como Usuário</ion-button>
+      </div>
+
+    </ion-slide>
+    <ion-slide>
+      <div>
+        <h1>Login</h1>
+        <p></p>
+        <ion-item>
+          <ion-label class="">E-mail</ion-label>
+          <ion-input type="text" value="" #email3></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label fixed>Senha</ion-label>
+          <ion-input type="password" value="" #senha3></ion-input>
+        </ion-item>
+
+        <ion-button color="tertiary" (click)="logar()" expand="block" color="dark">Entrar</ion-button>
+        <ion-button color="tertiary" (click)="lojista()" expand="block" color="dark">Entrar como Usuário</ion-button>
+
+      </div>
+    </ion-slide>
+
+  </ion-slides>
+
+  <div class="test">
+    <ion-segment>
+      <ion-segment-button (click)="proximo()">
+        <ion-label>Login</ion-label>
+      </ion-segment-button>
+      <ion-segment-button (click)="anterior()">
+        <ion-label>Cadastro</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
 </ion-content>
+
+<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">

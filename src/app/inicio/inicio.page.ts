@@ -17,5 +17,21 @@ export class InicioPage implements OnInit {
     this.router.navigate(['/quem']);
   }
 
+  cart(){
+    this.router.navigate(['/carrinho']);
+  }
+
+  search(){
+    this.router.navigate(['/roupas']);
+  }
+
+  logout(){
+    this.router.navigate(['/logoff']);
+  }
+
+  quem(){
+    this.router.navigate(['/quem']);
+  }
+
 
 }

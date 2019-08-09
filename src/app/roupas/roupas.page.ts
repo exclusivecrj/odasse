@@ -159,4 +159,8 @@ export class RoupasPage implements OnInit {
     this.router.navigate(['/carrinho'])
   }
 
+  search(){
+    this.router.navigate(['/roupas']);
+  }
+
 }

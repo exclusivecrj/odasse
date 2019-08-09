@@ -83,14 +83,11 @@ const routes: Routes = [
   {
     path: 'lojista',
     loadChildren: './lojista/lojista.module#LojistaPageModule'
-  },  { path: 'edita-lojista', loadChildren: './edita-lojista/edita-lojista.module#EditaLojistaPageModule' },
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule' }
-
-
-
-
-
-
+  },
+  { 
+    path: 'edita-lojista', 
+    loadChildren: './edita-lojista/edita-lojista.module#EditaLojistaPageModule' 
+  },  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
 
 ];
 

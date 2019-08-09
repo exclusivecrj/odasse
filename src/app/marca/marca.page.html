@@ -29,41 +29,15 @@
           <ion-card-subtitle>{{marca?.slogan}} </ion-card-subtitle>
         </ion-card-header>
 
-        <ion-button color="danger" fill="outline" (click)="remove(marca)">
+        <ion-button color="primary" fill="outline" (click)="remove(marca)">
           <ion-icon name="trash"></ion-icon>Excluir
         </ion-button>
-        <ion-button color="warning" fill="outline" (click)="marcaEdit(marca)">
+        <ion-button color="primary" fill="outline" (click)="marcaEdit(marca)">
           <ion-icon name="cloud-upload"></ion-icon>atualizar
         </ion-button>
         <br>
       </ion-card>
     </ion-col>
   </ion-row>
-
-
-  <ion-fab class="contat" vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="settings"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list class="teste" side="start">
-
-      <ion-fab-button class="btn" (click)="logout()">
-        <ion-icon class="img" name="log-out"></ion-icon>
-      </ion-fab-button>
-
-      <ion-fab-button class="btn" (click)="search()">
-        <ion-icon class="img" name="search"></ion-icon>
-      </ion-fab-button>
-
-      <ion-fab-button class="btn" (click)="contact()">
-        <ion-icon class="img" name="contact"></ion-icon>
-      </ion-fab-button>
-
-      <ion-fab-button class="btn" (click)="cart()">
-        <ion-icon class="img" name="cart"></ion-icon>
-      </ion-fab-button>
-
-    </ion-fab-list>
-  </ion-fab>
 
 </ion-content>

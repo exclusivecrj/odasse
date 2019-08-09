@@ -62,13 +62,6 @@ export class AppComponent {
       icon: 'md-list'
     },
 
-    {
-      title: 'Perfil',
-      url: '/view-perfil',
-      icon: 'md-list'
-    },
-
-    
   ];
 // 
   constructor(
@@ -94,6 +87,9 @@ export class AppComponent {
   }
   perfil(){
     this.router.navigate(['/view-perfil']);
+  }
+  testcart(){
+    this.router.navigate(['/carrinho']);
   }
 
 }
